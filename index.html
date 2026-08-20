@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンプルToDo＆集中タイマー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Focus & ToDo</h1>
+
+    <!-- タイマーセクション -->
+    <section class="timer-card">
+      <h2>集中タイマー (25分)</h2>
+      <div id="timer-display">25:00</div>
+      <div class="timer-controls">
+        <button id="start-btn">スタート</button>
+        <button id="pause-btn">一時停止</button>
+        <button id="reset-btn">リセット</button>
+      </div>
+    </section>
+
+    <!-- ToDoリストセクション -->
+    <section class="todo-card">
+      <h2>タスク一覧</h2>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="新しいタスクを入力..." required>
+        <button type="submit">追加</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
